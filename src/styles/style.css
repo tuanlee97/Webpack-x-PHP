@@ -1,0 +1,57 @@
+html {
+    display: flex;
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(59, 59, 59, 0.8379726890756303) 65%);
+    flex: 1;
+    margin: auto;
+    max-width: max-content;
+}
+
+.container-component {
+    padding: 2rem;
+    border: 2px solid hsl(0, 0%, 87%);
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    background-color: #c7c7c7;
+}
+
+.container-component h2 {
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 5px 0px #21212130;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #f3cd02;
+}
+
+button:hover {
+    background-color: #f3cd0230;
+    border: 1px solid #000;
+}
+
+input[type='text'] {
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 5px 0px #21212130;
+}
+
+.sync-btn {
+    background-color: #266eae;
+    color: white;
+}
+
+.sync-btn:hover {
+    background-color: #266eae30;
+}

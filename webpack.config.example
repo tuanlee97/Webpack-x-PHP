@@ -1,0 +1,27 @@
+const path = require('path');
+
+module.exports = {
+    entry: {
+        sender: './src/components/Sender.js',
+        receiver: './src/components/Receiver.js',
+        other: './src/components/Other.js'
+    },
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    resolve: {
+        extensions: ['.js'],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            }
+        ]
+    }
+};
